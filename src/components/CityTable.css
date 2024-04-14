@@ -1,0 +1,63 @@
+/* App styling */
+.App {
+  text-align: center;
+}
+
+/* Animation for logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Table styling */
+.city-table-container {
+  width: 85%; /* Table fills 85% of the screen */
+  margin: auto; /* Center align the table */
+  max-height: 300px; /* Adjust height as needed */
+  overflow-y: auto;
+  border: 2px solid #020202;
+  border-radius: 2px;
+  transition: width 0.5s ease; /* Smooth transition for width change */
+  background: radial-gradient(circle at 50% 50%, #404040, #000000);
+}
+
+table {
+  width: 100%;
+  height: auto; /* Allow table to grow vertically */
+  border-collapse: collapse;
+  transition: width 0.5s ease; /* Smooth transition for width change */
+}
+
+th, td {
+  border: 1px solid #e6e6e6;
+  padding: 8px;
+  color: #f2f2f2; /* Text color */
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.loading-indicator {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.city-link {
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+/* Animation for table */
+@keyframes table-animation {
+  0% { transform: scale(0.9); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
